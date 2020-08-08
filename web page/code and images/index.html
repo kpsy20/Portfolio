@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>B's flee Market</title>
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" type="text/css" href="all.css">
+		<style type = "text/css">
+			body {font-family: arial, sans-serif;background-color: #ddd; font-style: normal;}
+			div.logo {/*로고 만들기*/
+				position: fixed;
+				right: 0px;
+				bottom: 0px;
+				z-index: -1;
+			}
+
+			h1,h2 {font-family: verdana, helvetica, sans-serif; font-size: 40pt; }
+			a {text-decoration:none; /*링크에 밑줄 없애기*/
+			}
+			div.box /*텍스트를 담을 박스 만들기*/
+			{
+				width: 100%;
+				height: auto;
+				background-color: #ccf;
+				margin: auto;
+				z-index: -1;
+				border-radius: 15px;
+				box-shadow: 25px 25px 25px dimgrey;
+			}
+			div.box p /*박스안의 글자형식*/
+			{
+				color: #fff; font-weight: bold; text-align: center;
+			}
+			div.temp { /*깜빡이는 부분 만들기*/
+			    width: 100%;
+			    height: 15%;
+			    background-color: pink;
+			    -webkit-animation-name: example;
+			    -webkit-animation-duration: 2s;
+			    animation-name: example;
+			    animation-duration: 0.5s;
+			    animation-iteration-count: infinite;
+			}
+			@keyframes example { /*깜빡이는 부분 만들기2*/
+			    0%   {background-color: pink;}
+			    50%  {background-color: white;}
+			}
+			div.tab table
+			{
+				border: 0;
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<ul>
+			  <li><a class="active" href="index.html">Home</a></li>
+			  <li><a href="sell.html">Want to sell</a></li>
+			  <li><a href="feature.html">Feature</a></li>
+			  <li style = "float:right"><a href="intro.html">Information</a></li>
+			</ul>
+		</header>
+		<div class = "box">
+			<article><h2>What do you want?</h2></article>
+			<h1 style = "text-align: right">My store has these things.</h1>
+		</div>
+		<h1> Best Item!</h1>
+		<table>
+			<tbody>
+				<tr>
+					<td style = "font-size: 40pt; text-align:center;">ID: zimkjh</td>
+					<td style = "font-size: 40pt; text-align:center;">ID: kpsy20</td>
+					<td style = "font-size: 40pt; text-align:center;">ID: banguter</td>
+					<td style = "font-size: 40pt; text-align:center;">ID: hammon</td>
+				</tr>
+				<tr>
+					<td style = "text-align:center;"><a href="1.html"><img src="key.jpg" width = 350 height = 350 alt="key"/></a></td>
+					<td style = "text-align:center;"><a href="2.html"><img src="mouse.jpg" width = 350 height = 350 alt="key"/></a></td>
+					<td style = "text-align:center;"><a href="3.html"><img src="shoes1.png" width = 350 height = 350 alt="key"/></a></td>
+					<td style = "text-align:center;"><a href="4.html"><img src="border.png" width = 350 height = 350 alt="key"/></a></td>
+				</tr>
+				<tr>
+					<td style = "text-align:center;"><a href="1.html">Name: Master Key <br>Price: 89,000Won </a></td>
+					<td style = "text-align:center;"><a href="2.html">Name: Wireless Mouse <br>Price: 12,000Won</a></td>
+					<td style = "text-align:center;"><a href="3.html">Name: Soccer shoes<br>Price: 21,000Won</a></td>
+					<td style = "text-align:center;"><a href="4.html">Name: Dolls named JiBang<br>Price: 11,000Won</a></td>
+			</tbody>
+		</table>
+		<div class ="temp">
+		<h2 style = "text-align: right; font-size:40pt">Why do many people find B's fleeM?</h2>
+		<p style = "font-size:40pt">Because!</p>
+	</div>
+		<div class = "tab">
+		<table>
+			<tbody>
+				<tr>
+					<td style="font-size: 30pt; color: green ">B's fleeM uses 3-step safe program.</td>
+					<td><img src ="security.png" width = "300" height="300" alt="security image"/></td>
+				</tr>
+				<tr>
+					<td style = "text-align: right"><img src = "graph.png" width = "300" height = "300" alt="graph image"/></td>
+					<td style="font-size: 30pt; text-align: right; color: red">So it becomes famous, powerful.</td>
+				</tr>
+				<tr>
+					<td style = "text-align: center; font-size: 100pt" colspan = "2">§§§§§<a href = "sellbuy.html">Join us!</a>§§§§§</td>
+			</tbody>
+		</table>
+	</div>
+		<div class = "logo">
+			<img src = "flee.png" alt = "flee"> &trade;
+		</div>
+		<footer style="background-color: #ccf">
+			<p>Phone number: 010-1234-5678<br>Where: Gyeonggi-do Anyang-si<br>Owner: Beom Jin<br>E-mail: kpsy20@naver.com</p>
+		</footer>
+	</body>
+</html>

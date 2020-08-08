@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>B's flee Market</title>
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" type="text/css" href="all.css">
+		<style type = "text/css">
+			body {font-family: arial, sans-serif;}
+			div.logo/*로고 만들기*/
+			{
+				position: fixed;
+				right: 0px;
+				bottom: 0px;
+				z-index: -1;
+			}
+			div.ta/*제품 상세정보 사진들 표 위치 조정*/
+			{
+				padding-left: 15em;
+			}
+			div.ta table/*제품 상세정보 사진들 크기 조정*/
+			{
+				width:80%;
+				border: 0;
+			}
+			h1 {font-family: verdana, helvetica, sans-serif; font-size: 40pt; }
+			a {text-decoration:none;}
+			div.bor6 /*위치 조정*/
+			{
+				 float: right;
+				 padding: 1em;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<ul>
+			  <li><a class="active" href="index.html">Home</a></li>
+			  <li><a href="sell.html">Want to sell</a></li>
+			  <li><a href="feature.html">Feature</a></li>
+			  <li style = "float:right"><a href="intro.html">Information</a></li>
+			</ul>
+		</header>
+
+		<div style = "float: right; padding-right: 15em; padding-left: 3em; padding-top: 12em;">
+		<form method = "post" action = "ordered.html">
+			<aside>
+				<p>
+					<label>Quantity
+						<input type = "number"
+							min = "0"
+							max = "1"
+							step = "1" autofocus required />
+					</label>
+				</p>
+				<p>
+					<label>Name
+						<input type = "text" name = "name" required autocomplete="on" />
+					</label>
+				</p>
+				<p>
+					<label>Address<br>
+						<textarea name= "Address" rows= "4" cols = "36" placeholder="Enter address." required></textarea>
+					</label>
+				</p>
+				<p>
+					<label>Male
+						<input type = "radio" name = "gender" value = "Male" required />
+					</label>
+					<label>Female
+						<input type = "radio" name = "gender" value = "Female" required />
+					</label>
+				</p>
+				<p>
+					<label>Social Securuty Number
+						<input type = "password" name = "ID"  placeholder=" without -"  required />
+					</label>
+				</p>
+				<p>
+					<label>Email
+						<input type = "email" placeholder="kpsy20@naver.com" required />
+					</label>
+				</p>
+				<p>
+					<input type = "submit" value = "Order">
+					<input type = "reset" value = "Clear">
+				</p>
+			</aside>
+		</form>
+		</div>
+		<div class = "bor6">
+			<table>
+				<caption><h1>ID: zimkjh</h1></caption>
+				<tbody>
+					<tr>
+						<td>
+							<img src = "key.jpg" width = "400" height="400" alt= "key">
+						</td>
+						<td style = "font-weight: border;">
+							Name: Master key<br><br>Price: 89,000Won<br><br>Weight: 35g<br><br>Condition: B+
+						</td>
+					</tr>
+			</table>
+		</div>
+
+		<div class ="ta">
+		<table>
+			<tbody>
+				<tr>
+					<td><img src = "key1.jpg" width = "300" height="300" alt="key"></td>
+					<td style = "text-align: center"><img src= "move.png"  width = "100" height="200" alt="key"> </td>
+					<td style = "text-align: right"><img src = "key2.jpg" width = "300" height="300" alt="key"></td>
+				</tr>
+				<tr>
+					<td><img src = "key3.jpg"  width = "300" height="300" alt="key"></td>
+					<td style = "text-align: center"><img src= "move.png"  width = "100" height="200" alt="key"> </td>
+					<td style = "text-align: right"><img src = "key4.jpg"  width = "300" height="300" alt="key"></td>
+				</tr>
+				<tr>
+					<td><img src = "key5.jpg" width = "300" height="300" alt="key"></td>
+					<td style = "text-align: center"><img src= "move.png" width = "100" height="200" alt="key"> </td>
+					<td style = "text-align: right"><img src = "key6.jpg"  width = "300" height="300" alt="key"></td>
+				</tr>
+
+			</tbody>
+		</table>
+		</div>
+
+		<div class = "logo">
+			<img src = "flee.png" alt = "flee"> &trade;
+		</div>
+	</body>
+</html>

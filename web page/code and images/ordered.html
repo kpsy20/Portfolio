@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping More!</title>
+		<meta charset = "utf-8">
+    <style type = "text/css">
+    h1{/*글자 그림자랑 크기 조정*/
+      text-shadow: -4px 4px 6px dimgray;
+      font-size: 400%
+    }
+    div.box/*그래디언트 박스 제작*/
+    {
+      width: 100%;
+      border: 3px solid navy;
+      padding: 8px 15px;
+      text-align: center;
+      background: -webkit-gradient(linear, center top, center bottom,
+        color-stop(20%,white),color-stop(50%, orange),
+        color-stop(80%, yellow));
+      float: left;
+      margin-right: 10px;
+    }
+    a{/*링크 밑줄 없애기*/
+      text-decoration: none;
+    }
+    div.logo/*로고 만들기*/
+    {
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+      z-index: -1;
+    }
+    div.joke {/*트랜시젼을 이용한 움직이는 요소 만들기*/
+        width: 100px;
+        height: 100px;
+        background: black;
+        transition: 0.1s;
+        overflow: hidden;
+        text-align: center;
+        transform: translate(100px, 50px);
+    }
+
+    div.joke:hover {/*마우스 가져다 대면 변하는거*/
+        width: 90%;
+        background: red;
+    }
+    </style>
+  </head>
+  <body>
+    <div class = "box"><h1>Ordered Successfully!</h1></div>
+    <a href="index.html"><p style= "text-align: center; font-size: 40px">Go to main menu</p></a>
+    <div class = "logo">
+			<img src = "flee.png" alt = "flee"> &trade;
+		</div>
+    <div class = "joke">
+      <p style = "color: white">*Bonus* Coupon!!! Put on your cursor here! But.. Just joke hahahahahahah Have a nice day. Good bye my customer.</p>
+    </div>
+  </body>
+</html>

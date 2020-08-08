@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shopping More!</title>
+		<meta charset = "utf-8">
+    <style type = "text/css">
+    h1{
+      text-shadow: -4px 4px 6px dimgray;
+      font-size: 400%
+    }
+    div.box/*그레디언트 박스 만들기*/
+    {
+      width: 100%;
+      border: 3px solid navy;
+      padding: 8px 15px;
+      text-align: center;
+      background: -webkit-gradient(linear, center top, center bottom,
+        color-stop(20%,white),color-stop(50%, orange),
+        color-stop(80%, yellow));
+      float: left;
+      margin-right: 10px;
+    }
+    a{
+      text-decoration: none;
+    }
+    div.logo/*로고 만들기*/
+    {
+      position: fixed;
+      right: 0px;
+      bottom: 0px;
+      z-index: -1;
+    }
+    </style>
+  </head>
+  <body>
+    <div class = "box"><h1>Signed-up Successfully!</h1></div>
+    <a href="index.html"><p style= "text-align: center; font-size: 40px">Go to main menu</p></a>
+    <div class = "logo">
+			<img src = "flee.png" alt = "flee"> &trade;
+		</div>
+  </body>
+</html>

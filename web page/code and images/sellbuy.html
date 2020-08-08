@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>B's flee Market</title>
+		<meta charset = "utf-8">
+		<link rel = "stylesheet" type="text/css" href="all.css">
+		<style type = "text/css">
+			body {font-family: arial, sans-serif;background-color: #ddd;}
+			div.logo /*로고 만들기*/
+			{
+				position: fixed;
+				right: 0px;
+				bottom: 0px;
+				z-index: -1;
+			}
+      div.box /*왼쪽 빨간 박스 만들기*/
+      {
+				width: 50%;
+				height: auto;
+				background-color: #f11;
+        float: left;
+				z-index: -1;
+        text-align: center;
+      }
+      div.xob /*오른쪽 파란색 박스 만들기*/
+      {
+				width: 50%;
+				height: auto;
+				background-color: #11f;
+        float: right;
+				z-index: -1;
+        text-align: center;
+      }
+			h1 {font-family: verdana, helvetica, sans-serif; }
+			a {text-decoration:none;}
+    </style>
+  </head>
+  <body>
+    <header>
+			<ul>
+			  <li><a class="active" href="index.html">Home</a></li>
+			  <li><a href="sell.html">Want to sell</a></li>
+			  <li><a href="feature.html">Feature</a></li>
+			  <li style = "float:right"><a href="intro.html">Information</a></li>
+			</ul>
+    </header>
+      <div class = "box">
+        <p style = "font-size: 80pt; font-weight:bold;">Are you a seller?<br><a href="sell.html">Click here</a></p>
+      </div>
+      <div class = "xob">
+        <p style = "font-size: 80pt; font-weight:bold">Or are you a buyer?<br><a href="index.html">Click here</a></p>
+      </div>
+      <div class = "logo">
+  			<img src = "flee.png" alt = "flee"> &trade;
+  		</div>
+	</body>
+</html>

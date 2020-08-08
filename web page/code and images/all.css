@@ -1,0 +1,31 @@
+ul { /*맨위 리스트 만들기*/
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    font-size: 20pt;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+/*여기까지 맨위 리스트 만들기*/
+/*화면이 작아지면 글씨 작아지게 하기*/
+@media screen and (max-width: 900px){
+  ul{
+    font-size: 10pt;
+    }
+}
